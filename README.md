@@ -12,10 +12,23 @@ It handles the basic needs to start a backend (database setup, some configs, fil
 
 ### NOTE: This is not configured for cloudflare-workers
 
+### Pre-requisites:
+- docker
+- node LTS
+- bun
+
 To install dependencies:
 ```sh
 bun install
 ```
+
+Initialize db:
+```
+bun run start:db
+bun run migrate
+bun run seed
+```
+The previous step would initialize, migrate, and seed the database with pre-configure test users.
 
 To run:
 ```sh
