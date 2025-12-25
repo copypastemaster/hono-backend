@@ -9,11 +9,10 @@ const app = new Hono();
 app.use(logger());
 app.use(enableApp);
 
-
-app.route("/signup", signUpRoute)
+app.route("/signup", signUpRoute);
 
 showRoutes(app, {
-    colorize: true,
+	colorize: true,
 });
 
 export default app;

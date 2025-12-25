@@ -16,14 +16,8 @@ const users: UserInsert[] = [
 	},
 ];
 
+// Call when needed
 export async function insertUsers() {
-	try {
-		await db.insert(usersTable).values(users).onConflictDoNothing();
-		console.log("Users seeded.");
-	} catch (err) {
-		if (err instanceof Error) {
-			console.log("Error seeding db with users:", err.message);
-			throw err;
-		}
-	}
+	await db.insert(usersTable).values(users).onConflictDoNothing();
+	console.log("Users seeded.");
 }
