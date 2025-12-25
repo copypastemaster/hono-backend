@@ -31,7 +31,7 @@ bun run seed
 ```
 The previous step would initialize, migrate, and seed the database with pre-configure test users.
 
-## You can adjust the routers, or other features of hono by your own. This template only does the initial setup that is at least what I need initially for every backend project.
+You can adjust the routers, or other features of hono by your own. This template only does the initial setup that is at least what I need initially for every backend project.
 
 To run:
 ```sh
