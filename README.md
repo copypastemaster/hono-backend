@@ -23,6 +23,8 @@ To install dependencies:
 bun install
 ```
 
+Before you do this, make sure to adjust the env ```DATABASE_URL``` in your env file based on your adjusted docker compose. 
+
 Initialize db:
 ```
 bun run start:db
