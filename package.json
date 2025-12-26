@@ -22,5 +22,11 @@
     "drizzle-kit": "^0.31.8",
     "prettier": "^3.7.4",
     "tsx": "^4.21.0"
+  },
+  "imports": {
+    "#middlewares": "./src/middlewares/*.ts",
+    "#controllers": "./src/controllers/*.ts",
+    "#routes": "./src/controllers/*.ts",
+    "#services": "./src/services/*.ts"
   }
 }
