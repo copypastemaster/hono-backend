@@ -1,5 +1,5 @@
-import db from "../db/db.config";
-import { usersTable } from "../db/migrations/user.schema";
+import db from "../../db/db.config";
+import { usersTable } from "../../db/migrations/user.schema";
 import { eq } from "drizzle-orm";
 
 type User = typeof usersTable.$inferSelect;
